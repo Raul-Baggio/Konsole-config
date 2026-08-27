@@ -1,0 +1,225 @@
+{
+  "$schema": "https://github.com",
+  "logo": {
+    "type": "file",
+    "source": "/home/raul/.config/fastfetch/bonfire.txt",
+    "padding": {
+      "top": 1,
+      "right": 3
+    },
+    "height": 40
+  },
+  "display": {
+    "color": {
+      "keys": "#8B0000"
+    },
+    "separator": "",
+    "constants": [
+      "──────────────────────────────────────────────",
+      "\u001b[47D",
+      "\u001b[47C",
+      "\u001b[46C",
+      "══════════════════════════════════════════════",
+      "Raul"
+    ],
+    "brightColor": true
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "key": "                                              ",
+      "format": ""
+    },
+    {
+      "type": "custom",
+      "key": "                                              ",
+      "format": ""
+    },
+    {
+      "type": "custom",
+      "key": "                                              ",
+      "format": ""
+    },
+    {
+      "type": "custom",
+      "key": "                                              ",
+      "format": ""
+    },
+    {
+      "type": "custom",
+      "key": "╔═══════════════╦═{$5}╗\u001b[38D",
+      "format": "\u001b[1m{##8B0000} {$6} "
+    },
+    {
+      "type": "os",
+      "key": "║ {icon} \u001b[s{sysname} \u001b[u\u001b[10C  ║{$3}║{$2}"
+    },
+    {
+      "type": "datetime",
+      "key": "║ {icon} Fetched     ║{$3}║{$2}",
+      "format": "{year}-{month-pretty}-{day-pretty} {hour-pretty}:{minute-pretty}:{second-pretty} {timezone-name}"
+    },
+    {
+      "type": "locale",
+      "key": "║ {icon} Locale      ║{$3}║{$2}"
+    },
+    {
+      "type": "custom",
+      "key": "║{##FF8C00}┌──────────────┬{$1}┐{#keys}║\u001b[37D",
+      "format": "{##FF8C00} Hardware "
+    },
+    {
+      "type": "memory",
+      "key": "║{##FF8C00}│ {icon} RAM        │{$4}│{#keys}║{$2}"
+    },
+    {
+      "type": "swap",
+      "key": "║{##FF8C00}│ {icon} SWAP       │{$4}│{#keys}║{$2}"
+    },
+    {
+      "type": "cpu",
+      "key": "║{##FF8C00}│ {icon} CPU        │{$4}│{#keys}║{$2}",
+      "showPeCoreCount": true
+    },
+    {
+      "type": "gpu",
+      "key": "║{##FF8C00}│ {icon} GPU        │{$4}│{#keys}║{$2}",
+      "gpuType": "discrete",
+      "format": "AMD Radeon Vega Series"
+    },
+    {
+      "type": "disk",
+      "key": "║{##FF8C00}│ {icon} Disk       │{$4}│{#keys}║{$2}",
+      "format": "{size-used} \/ {size-total} ({size-percentage}) - {filesystem}"
+    },
+    {
+      "type": "custom",
+      "key": "║{##FF8C00}└──────────────┴{$1}┘{#keys}║",
+      "format": ""
+    },
+    {
+      "type": "custom",
+      "key": "║{##FF8C00}┌──────────────┬{$1}┐{#keys}║\u001b[37D",
+      "format": "{##FF8C00} Desktop "
+    },
+    {
+      "type": "de",
+      "key": "║{##FF8C00}│ {icon} Desktop    │{$4}│{#keys}║{$2}"
+    },
+    {
+      "type": "wm",
+      "key": "║{##FF8C00}│ {icon} Session    │{$4}│{#keys}║{$2}"
+    },
+    {
+      "type": "display",
+      "key": "║{##FF8C00}│ {icon} Display    │{$4}│{#keys}║{$2}",
+      "compactType": "original-with-refresh-rate"
+    },
+    {
+      "type": "localip",
+      "key": "║{##FF8C00}│ {icon} Local IP   │{$4}│{#keys}║{$2}",
+      "showIpv4": true,
+      "showIpv6": false
+    },
+    {
+      "type": "custom",
+      "key": "║{##FF8C00}└──────────────┴{$1}┘{#keys}║",
+      "format": ""
+    },
+    {
+      "type": "custom",
+      "key": "║{##FF8C00}┌──────────────┬{$1}┐{#keys}║\u001b[37D",
+      "format": "{##FF8C00} Terminal "
+    },
+    {
+      "type": "shell",
+      "key": "║{##FF8C00}│ {icon} Shell      │{$4}│{#keys}║{$2}"
+    },
+    {
+      "type": "terminal",
+      "key": "║{##FF8C00}│ {icon} Terminal   │{$4}│{#keys}║{$2}"
+    },
+    {
+      "type": "terminaltheme",
+      "key": "║{##FF8C00}│ {icon} Colors     │{$4}│{#keys}║{$2}"
+    },
+    {
+      "type": "packages",
+      "key": "║{##FF8C00}│ {icon} Packages   │{$4}│{#keys}║{$2}"
+    },
+    {
+      "type": "version",
+      "key": "║{##FF8C00}│ {icon} Fastfetch  │{$4}│{#keys}║{$2}",
+      "format": "v{version}"
+    },
+    {
+      "type": "custom",
+      "key": "║{##FF8C00}└──────────────┴{$1}┘{#keys}║",
+      "format": ""
+    },
+    {
+      "type": "custom",
+      "key": "║{##8B0000}┌──────────────┬{$1}┐{#keys}║\u001b[39D",
+      "format": "{##8B0000} Development "
+    },
+    {
+      "type": "command",
+      "keyIcon": " ",
+      "key": "║{##8B0000}│ {icon} NodeJS │{$4}│{#keys}║{$2}",
+      "text": "node --version",
+      "format": "node {~1}"
+    },
+    {
+      "type": "command",
+      "keyIcon": " ",
+      "key": "║{##8B0000}│ {icon} Python     │{$4}│{#keys}║{$2}",
+      "text": "python --version",
+      "format": "python {~7}"
+    },
+    {
+      "type": "command",
+      "keyIcon": " ",
+      "key": "║{##8B0000}│ {icon} Git        │{$4}│{#keys}║{$2}",
+      "text": "git version",
+      "format": "git {~12}"
+    },
+    {
+      "type": "custom",
+      "key": "║{##8B0000}└──────────────┴{$1}┘{#keys}║",
+      "format": ""
+    },
+    {
+      "type": "custom",
+      "key": "║{##8B0000}┌──────────────┬{$1}┐{#keys}║\u001b[36D",
+      "format": "{##8B0000} Uptime "
+    },
+    {
+      "type": "uptime",
+      "key": "║{##8B0000}│ {icon} Uptime     │{$4}│{#keys}║{$2}"
+    },
+    {
+      "type": "disk",
+      "keyIcon": " ",
+      "key": "║{##8B0000}│ {icon} OS Age     │{$4}│{#keys}║{$2}",
+      "folders": "/",
+      "format": "{create-time:10} [{days} days]"
+    },
+    {
+      "type": "custom",
+      "key": "║{##8B0000}└──────────────┴{$1}┘{#keys}║",
+      "format": ""
+    },
+    {
+      "type": "custom",
+      "key": "╚═════════════════{$5}╝",
+      "format": ""
+    },
+    "break",
+        {
+            "type": "colors",
+            "key": "{##8d9199}",
+            "symbol": "circle"
+        },
+
+  ]
+}
